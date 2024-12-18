@@ -33,16 +33,19 @@ class GeneralViewScreen extends StatelessWidget {
                 color: CupertinoColors.white,
                 child: Center(
                   child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        _generalScreenWidget(context),
-                        const SizedBox(height: 20),
-                        _dashboardScreenWidget(context),
-                       const SizedBox(height: 20),
-                        // _generalScreenWidget(context),
-                        // _generalScreenWidget(context),
-                        // _generalScreenWidget(context),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(18.0),
+                      child: Column(
+                        children: [
+                          _generalScreenWidget(context),
+                          const SizedBox(height: 20),
+                          _dashboardScreenWidget(context),
+                         const SizedBox(height: 20),
+                          // _generalScreenWidget(context),
+                          // _generalScreenWidget(context),
+                          // _generalScreenWidget(context),
+                        ],
+                      ),
                     ),
                   ),
                 ),
